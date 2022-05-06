@@ -1,0 +1,59 @@
+import React from "react";
+import "./Weather.css";
+
+export default function Weather() {
+  let weatherData = {
+    city: "Denver",
+    date: "Thursday 4:30",
+    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+    description: "Mostly Sunny",
+    humidity: "80",
+    wind: "12",
+    temperature: "54",
+  };
+  return (
+    <div className="Weather">
+      <form>
+        <div className="input-group mb-3">
+          <input
+            type="text"
+            className="form-control search-text-input"
+            placeholder="Type city here..."
+          />
+          <input className="btn" type="submit" value="Search" />
+          <button className="current-location-button">Current Location</button>
+        </div>
+      </form>
+      <div className="currentDate">{weatherData.date}</div>
+
+      <br />
+
+      <div className="row first-row">
+        <div className="col-sm-6 box-1">
+          <h1 className="currentCity">{weatherData.city}</h1>
+          <h5 className="description">{weatherData.description}</h5>
+          <br />
+          <h6 className="wind">Wind: {weatherData.wind} mph</h6>
+          <h6 className="humidity">Humidity: {weatherData.humidity}%</h6>
+        </div>
+        <div className="col-sm-6 box-2">
+          <img
+            src={weatherData.imgUrl}
+            alt="weatherPic"
+            className="weatherPic"
+          />
+          <br />
+          <h3>{weatherData.temperature}</h3>
+          <span className="units">°F</span>
+        </div>
+      </div>
+
+      <br />
+      <div className="future">
+        <p>5-day Future Forecast</p>
+      </div>
+
+      <div className="row justify-content-evenly"></div>
+    </div>
+  );
+}
