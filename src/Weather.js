@@ -55,6 +55,16 @@ export default function Weather() {
         <p>5-day Future Forecast</p>
       </div>
       <div className="row justify-content-evenly"></div>
+      <div className="footer">
+        <a
+          href="https://github.com/AshJungers/Project-WeatherApp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open-source code
+        </a>{" "}
+        by Ashley Jungers
+      </div>
     </div>
   );
 }
