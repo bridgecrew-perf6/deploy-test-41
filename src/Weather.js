@@ -1,5 +1,7 @@
 import React from "react";
 import "./Weather.css";
+import axios from "axios";
+import Forecast from "./Forecast";
 
 export default function Weather() {
   let weatherData = {
@@ -58,6 +60,7 @@ export default function Weather() {
         <p>5-day Future Forecast</p>
       </div>
       <div className="row justify-content-evenly"></div>
+      <Forecast />
       <div className="footer">
         <a
           href="https://github.com/AshJungers/Project-WeatherApp"

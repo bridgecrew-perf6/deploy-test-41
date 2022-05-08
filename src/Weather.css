@@ -110,7 +110,8 @@ button.current-location-button:hover {
   font-weight: 400;
   font-size: medium;
   position: relative;
-  top: -30px;
+  bottom: 40px;
+  left: 35px;
 }
 
 .mb-3 {

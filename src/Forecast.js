@@ -1,0 +1,111 @@
+import React from "react";
+import "./Weather.css";
+
+export default function Forecast() {
+  function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+
+    return days[day];
+  }
+  return (
+    <div class="row justify-content-evenly">
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body shadow">
+            <h5 class="card-title">Monday</h5>
+
+            <hr />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="weatherPic"
+            />
+            <span class="weather-forecast-temperature">
+              <p class="card-text">
+                <span class="weather-forecast-temperature-max">55°</span> |
+                <span class="weather-forecast-temperature-min">44°</span>
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body shadow">
+            <h5 class="card-title">Tuesday</h5>
+
+            <hr />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="weatherPic"
+            />
+            <span class="weather-forecast-temperature">
+              <p class="card-text">
+                <span class="weather-forecast-temperature-max">55°</span> |
+                <span class="weather-forecast-temperature-min">44°</span>
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body shadow">
+            <h5 class="card-title">Wedneday</h5>
+
+            <hr />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="weatherPic"
+            />
+            <span class="weather-forecast-temperature">
+              <p class="card-text">
+                <span class="weather-forecast-temperature-max">55°</span> |
+                <span class="weather-forecast-temperature-min">44°</span>
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body shadow">
+            <h5 class="card-title">Thursday</h5>
+
+            <hr />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="weatherPic"
+            />
+            <span class="weather-forecast-temperature">
+              <p class="card-text">
+                <span class="weather-forecast-temperature-max">55°</span> |
+                <span class="weather-forecast-temperature-min">44°</span>
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body shadow">
+            <h5 class="card-title">Friday</h5>
+
+            <hr />
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="weatherPic"
+            />
+            <span class="weather-forecast-temperature">
+              <p class="card-text">
+                <span class="weather-forecast-temperature-max">55°</span> |
+                <span class="weather-forecast-temperature-min">44°</span>
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
