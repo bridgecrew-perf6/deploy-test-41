@@ -62,7 +62,7 @@ export default function Weather() {
       <Forecast />
       <div className="footer">
         <a
-          href="https://github.com/AshJungers/Project-WeatherApp"
+          href="https://github.com/AshJungers/weather-react"
           target="_blank"
           rel="noopener noreferrer"
         >
