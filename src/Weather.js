@@ -13,7 +13,10 @@ export default function Weather() {
   };
   return (
     <div className="Weather">
-      <form>
+      <header>
+        <h6>Weather Forecast</h6>
+      </header>
+      <form className="searchform">
         <div className="input-group mb-3">
           <input
             type="text"
@@ -30,13 +33,13 @@ export default function Weather() {
       <br />
       <div className="container">
         <div className="row">
-          <div className="col-6">
+          <div className="col-6 box-1">
             <h1 className="currentCity">{weatherData.city}</h1>
             <h5 className="description">{weatherData.description}</h5>
             <h6 className="wind">Wind: {weatherData.wind} mph</h6>
             <h6 className="humidity">Humidity: {weatherData.humidity}%</h6>
           </div>
-          <div className="col-6">
+          <div className="col-6 box-2">
             <img
               src={weatherData.imgUrl}
               alt="weatherPic"
