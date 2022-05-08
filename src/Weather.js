@@ -33,7 +33,7 @@ export default function Weather() {
       <div className="currentDate">{weatherData.date}</div>
 
       <br />
-      <div className="container">
+      <div className="container currentSearch">
         <div className="row">
           <div className="col-6 box-1">
             <h1 className="currentCity">{weatherData.city}</h1>
@@ -48,7 +48,7 @@ export default function Weather() {
               className="weatherPic"
             />
             <br />
-            <h3>{weatherData.temperature}</h3>
+            <h3 className="currentTemp">{weatherData.temperature}</h3>
             <span className="units">°F</span>
           </div>
         </div>

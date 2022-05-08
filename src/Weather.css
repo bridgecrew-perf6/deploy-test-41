@@ -67,6 +67,10 @@ button.current-location-button:hover {
   background-color: #e2c2b9;
 }
 
+.currentSearch {
+  margin-top: 120px;
+}
+
 .currentDate {
   font-family: "Poppins", sans-serif;
   font-size: smaller;
@@ -98,11 +102,8 @@ button.current-location-button:hover {
   opacity: 0.6;
 }
 
-.current-temp {
-  display: inline;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 70px;
+.currentTemp {
+  margin-left: 35px;
 }
 
 .units {
@@ -111,7 +112,7 @@ button.current-location-button:hover {
   font-size: medium;
   position: relative;
   bottom: 40px;
-  left: 35px;
+  left: 75px;
 }
 
 .mb-3 {
@@ -125,7 +126,7 @@ div.input-group {
 
 .future {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 120px;
   margin-bottom: 30px;
   font-size: larger;
 }
