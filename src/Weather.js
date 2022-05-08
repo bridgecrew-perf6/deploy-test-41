@@ -1,6 +1,5 @@
 import React from "react";
 import "./Weather.css";
-import axios from "axios";
 import Forecast from "./Forecast";
 
 export default function Weather() {
