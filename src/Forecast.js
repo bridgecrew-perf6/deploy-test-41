@@ -2,13 +2,6 @@ import React from "react";
 import "./Weather.css";
 
 export default function Forecast() {
-  function formatDay(timestamp) {
-    let date = new Date(timestamp * 1000);
-    let day = date.getDay();
-    let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
-
-    return days[day];
-  }
   return (
     <div class="row justify-content-evenly">
       <div class="col-sm-2">
